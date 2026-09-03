@@ -4,5 +4,7 @@
         xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog
         http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-4.17.xsd">
 
-    <include file=""/>
+    <include file="changelog/001-create-airports-table.xml" relativeToChangelogFile="true"/>
+    <include file="changelog/002-create-aircraft-types-table.xml" relativeToChangelogFile="true"/>
+    <include file="changelog/003-create-aircrafts-table.xml" relativeToChangelogFile="true"/>
 </databaseChangeLog>
