@@ -17,7 +17,7 @@ public class AirportMapper {
                 .setCountryCode(airport.getCountryCode())
                 .setLatitude(airport.getLatitude())
                 .setLongitude(airport.getLongitude())
-                .setTimeZone(airport.getTimeZone());
+                .setTimeZone(airport.getTimezone());
     }
 
     public Airport mapToEntity(CreateAirportCommand createAirportCommand) {
@@ -29,7 +29,7 @@ public class AirportMapper {
                 .countryCode(createAirportCommand.getCountryCode())
                 .latitude(createAirportCommand.getLatitude())
                 .longitude(createAirportCommand.getLongitude())
-                .timeZone(createAirportCommand.getTimeZone())
+                .timezone(createAirportCommand.getTimeZone())
                 .build();
     }
 }
