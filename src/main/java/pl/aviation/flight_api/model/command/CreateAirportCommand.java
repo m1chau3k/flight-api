@@ -3,7 +3,6 @@ package pl.aviation.flight_api.model.command;
 import jakarta.validation.constraints.DecimalMax;
 import jakarta.validation.constraints.DecimalMin;
 import jakarta.validation.constraints.NotBlank;
-import jakarta.validation.constraints.NotEmpty;
 import jakarta.validation.constraints.NotNull;
 import jakarta.validation.constraints.Size;
 import lombok.Data;
@@ -15,7 +14,6 @@ public class CreateAirportCommand {
     @NotBlank(message = "ICAO code cannot be blank")
     @Size(min = 4, max = 4, message = "ICAO code must be exactly 4 characters")
     private String icaoCode;
-    @NotEmpty
     @Size(min = 3, max = 3, message = "IATA code must be exactly 3 characters")
     private String iataCode;
     @NotBlank(message = "Airport name cannot be blank")
