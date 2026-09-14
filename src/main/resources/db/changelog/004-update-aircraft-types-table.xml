@@ -1,0 +1,28 @@
+<databaseChangeLog
+        xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog
+        http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-4.17.xsd">
+
+    <changeSet id="004-update-aircraft-types-table" author="m1chau3k">
+        <addColumn tableName="aircraft_types">
+            <column name="range" type="int">
+                <constraints nullable="false"/>
+            </column>
+        </addColumn>
+
+        <addColumn tableName="aircraft_types">
+            <column name="created_at" type="timestamp with time zone">
+                <constraints nullable="false"/>
+            </column>
+        </addColumn>
+
+        <addColumn tableName="aircraft_types">
+            <column name="updated_at" type="timestamp with time zone"/>
+        </addColumn>
+
+        <modifyDataType tableName="aircraft_types"
+                        columnName="type_code"
+                        newDataType="varchar(4)"/>
+    </changeSet>
+</databaseChangeLog>
