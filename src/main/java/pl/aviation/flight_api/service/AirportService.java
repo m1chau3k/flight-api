@@ -26,7 +26,7 @@ public class AirportService {
             );
         }
 
-        if (airportRepository.existsByIataCode(command.getIataCode())) {
+        if (airportRepository.existsByIataCode(command.getIataCode()) && command.getIataCode() != null) {
             throw new IllegalArgumentException(
                     MessageFormat.format("Airport with IATA code {0} already exists", command.getIataCode())
             );

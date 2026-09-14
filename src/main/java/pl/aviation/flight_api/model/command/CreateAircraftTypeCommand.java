@@ -16,10 +16,8 @@ public class CreateAircraftTypeCommand {
     private String manufacturer;
     @NotBlank(message = "Model code cannot be blank")
     private String model;
-    @NotBlank(message = "Passenger capacity is required")
     @PositiveOrZero(message = "Passenger capacity have to be provided, even for cargo planes (0)")
     private Integer passengerCapacity;
-    @NotBlank(message = "Range is required")
     @PositiveOrZero(message = "Range have to be provided")
     private Integer range;
 }

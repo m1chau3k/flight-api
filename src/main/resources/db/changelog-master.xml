@@ -7,4 +7,5 @@
     <include file="changelog/001-create-airports-table.xml" relativeToChangelogFile="true"/>
     <include file="changelog/002-create-aircraft-types-table.xml" relativeToChangelogFile="true"/>
     <include file="changelog/003-create-aircrafts-table.xml" relativeToChangelogFile="true"/>
+    <include file="changelog/004-update-aircraft-types-table.xml" relativeToChangelogFile="true"/>
 </databaseChangeLog>
